@@ -1,0 +1,341 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<marcador>
+<competicion id="1"><nombre>LFP 1 DIVISION</nombre>
+<fase id="0">UNICA</fase>
+<jornada id="1" 
+jornadaSiguiente="http://www.marca.com/marcador/futbol/iphone/1/2012_13/fase0/jornada_2/marcador.xml" 
+ >
+</jornada>
+<temporada>2012_13</temporada>
+<grupos>
+<grupo id="1">
+<nombre>Grupo A</nombre>
+<eventos>
+	<evento id="411486">
+		<fecha>18/08/2012 19:00</fecha>
+		<estado id="3">Finalizado</estado>
+		<equipolocal id="6">Celta</equipolocal>
+		<equipovisitante id="204">Málaga</equipovisitante>
+		<resultadolocal>0</resultadolocal>
+		<resultadovisitante>1</resultadovisitante>
+		<tv>GolT, C+L</tv>
+		<previacronica>2</previacronica>
+	</evento>
+	<evento id="411487">
+		<fecha>18/08/2012 21:00</fecha>
+		<estado id="3">Finalizado</estado>
+		<equipolocal id="17">Sevilla</equipolocal>
+		<equipovisitante id="109">Getafe</equipovisitante>
+		<resultadolocal>2</resultadolocal>
+		<resultadovisitante>1</resultadovisitante>
+		<tv>GolT, C+L</tv>
+		<previacronica>2</previacronica>
+	</evento>
+	<evento id="411488">
+		<fecha>18/08/2012 23:00</fecha>
+		<estado id="3">Finalizado</estado>
+		<equipolocal id="114">Mallorca</equipolocal>
+		<equipovisitante id="9">Espanyol</equipovisitante>
+		<resultadolocal>2</resultadolocal>
+		<resultadovisitante>1</resultadovisitante>
+		<tv>GolT, C+L</tv>
+		<previacronica>2</previacronica>
+	</evento>
+	<evento id="411484">
+		<fecha>19/08/2012 19:00</fecha>
+		<estado id="3">Finalizado</estado>
+		<equipolocal id="2">Athletic</equipolocal>
+		<equipovisitante id="5">Betis</equipovisitante>
+		<resultadolocal>3</resultadolocal>
+		<resultadovisitante>5</resultadovisitante>
+		<tv>GolT, C+L</tv>
+		<previacronica>2</previacronica>
+	</evento>
+	<evento id="411481">
+		<fecha>19/08/2012 19:00</fecha>
+		<estado id="3">Finalizado</estado>
+		<equipolocal id="14">R. Madrid</equipolocal>
+		<equipovisitante id="21">Valencia</equipovisitante>
+		<resultadolocal>1</resultadolocal>
+		<resultadovisitante>1</resultadovisitante>
+		<tv>GolT, C+L</tv>
+		<previacronica>2</previacronica>
+	</evento>
+	<evento id="411482">
+		<fecha>19/08/2012 21:00</fecha>
+		<estado id="3">Finalizado</estado>
+		<equipolocal id="4">Barcelona</equipolocal>
+		<equipovisitante id="15">R. Sociedad</equipovisitante>
+		<resultadolocal>5</resultadolocal>
+		<resultadovisitante>1</resultadovisitante>
+		<tv>C+</tv>
+		<previacronica>2</previacronica>
+	</evento>
+	<evento id="411483">
+		<fecha>19/08/2012 23:00</fecha>
+		<estado id="3">Finalizado</estado>
+		<equipolocal id="112">Levante</equipolocal>
+		<equipovisitante id="3">Atlético</equipovisitante>
+		<resultadolocal>1</resultadolocal>
+		<resultadovisitante>1</resultadovisitante>
+		<tv>GolT, C+L</tv>
+		<previacronica>2</previacronica>
+	</evento>
+	<evento id="411490">
+		<fecha>20/08/2012 19:00</fecha>
+		<estado id="3">Finalizado</estado>
+		<equipolocal id="8">Deportivo</equipolocal>
+		<equipovisitante id="117">Osasuna</equipovisitante>
+		<resultadolocal>2</resultadolocal>
+		<resultadovisitante>0</resultadovisitante>
+		<tv>GolT, C+L</tv>
+		<previacronica>2</previacronica>
+	</evento>
+	<evento id="411489">
+		<fecha>20/08/2012 21:00</fecha>
+		<estado id="3">Finalizado</estado>
+		<equipolocal id="13">Rayo</equipolocal>
+		<equipovisitante id="201">Granada</equipovisitante>
+		<resultadolocal>1</resultadolocal>
+		<resultadovisitante>0</resultadovisitante>
+		<tv>GolT, C+L</tv>
+		<previacronica>2</previacronica>
+	</evento>
+	<evento id="411485">
+		<fecha>20/08/2012 23:00</fecha>
+		<estado id="3">Finalizado</estado>
+		<equipolocal id="22">Zaragoza</equipolocal>
+		<equipovisitante id="20">Valladolid</equipovisitante>
+		<resultadolocal>0</resultadolocal>
+		<resultadovisitante>1</resultadovisitante>
+		<tv>LaSexta</tv>
+		<previacronica>2</previacronica>
+	</evento>
+</eventos>
+<clasificacion>
+	<team>
+		<name>Barcelona</name> 
+		<rank>1</rank> 
+		<points>3</points> 
+		<played>1</played> 
+		<won>1</won> 
+		<lost>0</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>5</goals_scored> 
+		<goals_conceded>1</goals_conceded> 
+	</team>
+	<team>
+		<name>Betis</name> 
+		<rank>2</rank> 
+		<points>3</points> 
+		<played>1</played> 
+		<won>1</won> 
+		<lost>0</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>5</goals_scored> 
+		<goals_conceded>3</goals_conceded> 
+	</team>
+	<team>
+		<name>Deportivo</name> 
+		<rank>3</rank> 
+		<points>3</points> 
+		<played>1</played> 
+		<won>1</won> 
+		<lost>0</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>2</goals_scored> 
+		<goals_conceded>0</goals_conceded> 
+	</team>
+	<team>
+		<name>Mallorca</name> 
+		<rank>4</rank> 
+		<points>3</points> 
+		<played>1</played> 
+		<won>1</won> 
+		<lost>0</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>2</goals_scored> 
+		<goals_conceded>1</goals_conceded> 
+	</team>
+	<team>
+		<name>Sevilla</name> 
+		<rank>5</rank> 
+		<points>3</points> 
+		<played>1</played> 
+		<won>1</won> 
+		<lost>0</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>2</goals_scored> 
+		<goals_conceded>1</goals_conceded> 
+	</team>
+	<team>
+		<name>Málaga</name> 
+		<rank>6</rank> 
+		<points>3</points> 
+		<played>1</played> 
+		<won>1</won> 
+		<lost>0</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>1</goals_scored> 
+		<goals_conceded>0</goals_conceded> 
+	</team>
+	<team>
+		<name>Rayo</name> 
+		<rank>7</rank> 
+		<points>3</points> 
+		<played>1</played> 
+		<won>1</won> 
+		<lost>0</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>1</goals_scored> 
+		<goals_conceded>0</goals_conceded> 
+	</team>
+	<team>
+		<name>Valladolid</name> 
+		<rank>8</rank> 
+		<points>3</points> 
+		<played>1</played> 
+		<won>1</won> 
+		<lost>0</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>1</goals_scored> 
+		<goals_conceded>0</goals_conceded> 
+	</team>
+	<team>
+		<name>Atlético</name> 
+		<rank>9</rank> 
+		<points>1</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>0</lost> 
+		<drawn>1</drawn> 
+		<goals_scored>1</goals_scored> 
+		<goals_conceded>1</goals_conceded> 
+	</team>
+	<team>
+		<name>Levante</name> 
+		<rank>10</rank> 
+		<points>1</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>0</lost> 
+		<drawn>1</drawn> 
+		<goals_scored>1</goals_scored> 
+		<goals_conceded>1</goals_conceded> 
+	</team>
+	<team>
+		<name>R. Madrid</name> 
+		<rank>11</rank> 
+		<points>1</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>0</lost> 
+		<drawn>1</drawn> 
+		<goals_scored>1</goals_scored> 
+		<goals_conceded>1</goals_conceded> 
+	</team>
+	<team>
+		<name>Valencia</name> 
+		<rank>12</rank> 
+		<points>1</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>0</lost> 
+		<drawn>1</drawn> 
+		<goals_scored>1</goals_scored> 
+		<goals_conceded>1</goals_conceded> 
+	</team>
+	<team>
+		<name>Espanyol</name> 
+		<rank>13</rank> 
+		<points>0</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>1</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>1</goals_scored> 
+		<goals_conceded>2</goals_conceded> 
+	</team>
+	<team>
+		<name>Getafe</name> 
+		<rank>14</rank> 
+		<points>0</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>1</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>1</goals_scored> 
+		<goals_conceded>2</goals_conceded> 
+	</team>
+	<team>
+		<name>Celta</name> 
+		<rank>15</rank> 
+		<points>0</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>1</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>0</goals_scored> 
+		<goals_conceded>1</goals_conceded> 
+	</team>
+	<team>
+		<name>Granada</name> 
+		<rank>16</rank> 
+		<points>0</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>1</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>0</goals_scored> 
+		<goals_conceded>1</goals_conceded> 
+	</team>
+	<team>
+		<name>Zaragoza</name> 
+		<rank>17</rank> 
+		<points>0</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>1</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>0</goals_scored> 
+		<goals_conceded>1</goals_conceded> 
+	</team>
+	<team>
+		<name>Athletic</name> 
+		<rank>18</rank> 
+		<points>0</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>1</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>3</goals_scored> 
+		<goals_conceded>5</goals_conceded> 
+	</team>
+	<team>
+		<name>Osasuna</name> 
+		<rank>19</rank> 
+		<points>0</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>1</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>0</goals_scored> 
+		<goals_conceded>2</goals_conceded> 
+	</team>
+	<team>
+		<name>R. Sociedad</name> 
+		<rank>20</rank> 
+		<points>0</points> 
+		<played>1</played> 
+		<won>0</won> 
+		<lost>1</lost> 
+		<drawn>0</drawn> 
+		<goals_scored>1</goals_scored> 
+		<goals_conceded>5</goals_conceded> 
+	</team>
+</clasificacion>
+</grupo>
+</grupos>
+</competicion>
+</marcador>
