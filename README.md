@@ -9,3 +9,7 @@ En este proyecto vamos a crear un programa en python en el cuál usaremos ficher
 * Quiniela de jornada.
 
 En liga.xml, liga2.xml y liga3.xml estarán los fichero de muestra con los que vamos a trabajar.
+
+Lo primero que tendremos que hacer para poder leer y escribir documentos xml en python es tener instalado el paquete python3-lxml, si no lo tenemos instalado:
+
+	apt-get install python3-lxml
