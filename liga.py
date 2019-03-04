@@ -35,6 +35,3 @@ print("Canal de TV: %s"%tv)
 	# Abrir documento de jornada
 	# Id mostrando partidos de esa jornada y al final mostrar si
 	# si se ha acertado con la quiniela	
-doc = etree.parse('prueba.xml')
-
-print(doc.xpath("//price/text()"))
