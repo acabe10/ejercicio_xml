@@ -1,25 +1,28 @@
 from lxml import etree
 arbol = etree.parse('liga.xml')
-
+cont = 0
 # Pedir número de jornada y año
 
 	# Abrir documento dependiendo de jornada y año
+#eventos=arbol.xpath("//evento")
+#print(eventos)
+#for datos in eventos:
+#	print(datos.xpath("./fecha/text()")[cont])
+#	print(datos.xpath("./equipolocal/text()")[cont])
+#	print(datos.xpath("./equipovisitante/text()")[cont])
+#	print(datos.xpath("./tv/text()")[cont])
+#	cont = cont + 1
+#	print(cont)
+	# Mostrar partidos, hora y canal de tv
 def partidos(arbol):
-	fecha=arbol.xpath("//evento/fecha/text()")[0]
+	fecha=arbol.xpath("//evento/fecha/text()")
 	local=arbol.xpath("//evento/equipolocal/text()")
 	visitante=arbol.xpath("//evento/equipovisitante/text()")
 	canal=arbol.xpath("//evento/tv/text()")
-	return fecha,local,visitante,canal
+	return zip(fecha,local,visitante,canal)
 
-#fech,loc,vis,tv = partidos(arbol)
-#print("Fecha: %s"%fech)
-#print("Equipo local: %s"%loc)
-#print("Equipo visitante: %s"%vis)
-#print("Canal de TV: %s"%tv)
-
-for i in partidos(arbol):
-	print(i)
-	# Mostrar partidos, hora y canal de tv
+for a,e,i,o in partidos(arbol):
+    print ("Fecha y Hora:",a,e,"-",i,"   Canales:",o)
 
 # Pedir número de jornada y año
 	# Abrir documento de esa jornada y año
