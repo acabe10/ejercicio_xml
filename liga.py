@@ -2,9 +2,48 @@ from lxml import etree
 arbol = etree.parse('liga.xml')
 cont = 0
 # Pedir número de jornada y año
+def temporada():
+	while True:
+		print("1.Temporada 2012-13")
+		print("2.Temporada 2013-14")
+		print("3.Temporada 2014-15")
+		print("4.Temporada 2015-16")
+		print("5.Temporada 2016-17")
+		print("6.Temporada 2017-18")
+		print("7.Temporada 2018-19")
+		opcion=int(input("Elige opción: "))
+
+		if opcion == 1:
+			temporada="2012_13"
+			return temporada
+		elif opcion == 1:
+			temporada="2013_14"
+			return temporada
+		elif opcion == 1:
+			temporada="2014_15"
+			return temporada
+		elif opcion == 1:
+			temporada="2015_16"
+			return temporada
+		elif opcion == 1:
+			temporada="2016_17"
+			return temporada
+		elif opcion == 1:
+			temporada="2017_18"
+			return temporada
+		elif opcion == 1:
+			temporada="2018_19"
+			return temporada
+		else:
+			print()
+			print("Error de opción")
+			print()
+
+
 	# Abrir documento dependiendo de jornada y año
 
-	# Mostrar partidos, hora y canal de tv
+
+# Funcion para mostrar partidos, hora y canal de tv
 def partidos(arbol):
 	fecha=arbol.xpath("//evento/fecha/text()")
 	local=arbol.xpath("//evento/equipolocal/text()")
@@ -20,6 +59,7 @@ while True:
 	print("5.Quiniela de jornada seleccionada")
 	print("0.Salir")
 	opcion=int(input("Elige opción: "))
+	print()
 
 	if opcion == 0:
 		print()
@@ -33,6 +73,7 @@ while True:
 		    print("Local: %s -- Visitante: %s" % (local,visi))
 		    print("Canal/es de TV: %s" % tv)
 		    print("="*40)
+		print()
 
 	else:
 		print()
