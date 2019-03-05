@@ -50,6 +50,11 @@ def partidos(arbol):
 	canal=arbol.xpath("//evento/tv/text()")
 	return zip(fecha,local,visitante,canal)
 
+def goles(arbol):
+	glocal=arbol.xpath("//evento/resultadolocal/text()")
+	gvisitante=arbol.xpath("//evento/resultadovisitante/text()")
+	return glocal,gvisitante
+
 while True:
 	print("1.Pedir jornada y año y mostrar partidos, hora y canal de TV")
 	print("2.Te cuenta el número de goles que se han marcado en una determinada jornada")
@@ -68,7 +73,6 @@ while True:
 
 	elif opcion == 1:
 		tempo=temporada()
-		print(tempo)
 		for fecha,local,visi,tv in partidos(arbol):
 		    print ("Fecha y hora:",fecha)
 		    print("Local: %s -- Visitante: %s" % (local,visi))
@@ -76,6 +80,10 @@ while True:
 		    print("="*40)
 		print()
 
+	elif opcion == 2:
+		glocal,gvisitante = goles(arbol)
+
+		
 	else:
 		print()
 		print("Error de opción")
