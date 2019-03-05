@@ -82,8 +82,19 @@ while True:
 
 	elif opcion == 2:
 		glocal,gvisitante = goles(arbol)
+		print(sum(glocal))
 
-		
+	elif opcion == 3:
+		while True:
+			print("1.beIN")
+			print("2.GOL")
+			print("3.GolT")
+			print("4.C+L")
+			print("5.C+ Liga")
+			print("6.Teledeporte")
+			canal=int(input("Elige opción: "))
+			print()
+
 	else:
 		print()
 		print("Error de opción")
