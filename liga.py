@@ -1,6 +1,5 @@
 from lxml import etree
 arbol = etree.parse('liga.xml')
-cont = 0
 # Pedir número de jornada y año
 def temporada():
 	while True:
@@ -16,22 +15,22 @@ def temporada():
 		if opcion == 1:
 			temporada="2012_13"
 			return temporada
-		elif opcion == 1:
+		elif opcion == 2:
 			temporada="2013_14"
 			return temporada
-		elif opcion == 1:
+		elif opcion == 3:
 			temporada="2014_15"
 			return temporada
-		elif opcion == 1:
+		elif opcion == 4:
 			temporada="2015_16"
 			return temporada
-		elif opcion == 1:
+		elif opcion == 5:
 			temporada="2016_17"
 			return temporada
-		elif opcion == 1:
+		elif opcion == 6:
 			temporada="2017_18"
 			return temporada
-		elif opcion == 1:
+		elif opcion == 7:
 			temporada="2018_19"
 			return temporada
 		else:
@@ -68,6 +67,8 @@ while True:
 		break;
 
 	elif opcion == 1:
+		tempo=temporada()
+		print(tempo)
 		for fecha,local,visi,tv in partidos(arbol):
 		    print ("Fecha y hora:",fecha)
 		    print("Local: %s -- Visitante: %s" % (local,visi))
