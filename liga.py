@@ -25,42 +25,42 @@ def pedir_canal():
 	while True:
 		print("Dime el canal por el que quiere preguntar:")
 		print("1.beIN")
-		print("2.GOL")
-		print("3.GolT")
+		print("2.Gol")
+		print("3.Partidazo")
 		print("4.C+L")
 		print("5.C+ Liga")
 		print("6.Teledeporte")
 		print()
-		canal=int(input("Elige opción: "))
+		opcion=int(input("Elige opción: "))
 		print()
 
 		if opcion == 1:
-			canal="beIN"
-			return canal
+			emision="beIN"
+			return emision
 		elif opcion == 2:
-			canal="GOL"
-			return canal
+			emision="Gol"
+			return emision
 		elif opcion == 3:
-			canal="GolT"
-			return canal
+			emision="Partidazo"
+			return emision
 		elif opcion == 4:
-			canal="C+L"
-			return canal
+			emision="C+L"
+			return emision
 		elif opcion == 5:
-			canal="C+ Liga"
-			return canal
+			emision="C+ Liga"
+			return emision
 		elif opcion == 6:
-			canal="Teledeporte"
-			return canal
+			emision="Teledeporte"
+			return emision
 		else:
 			print()
 			print("Error de opción")
 			print()
 
 def canal(arbol):
-	local=arbol.xpath('//evento[tv="%s"]/../equipolocal/text()'%tv_)
-	visi=arbol.xpath('//evento[tv="%s"]/../equipovisitante/text()'%tv_)
-	fecha=arbol.xpath('//evento[tv="%s"]/../fecha/text()'%tv_)
+	local=arbol.xpath('//evento[tv="%s"]/equipolocal/text()'%tv_)
+	visi=arbol.xpath('//evento[tv="%s"]/equipovisitante/text()'%tv_)
+	fecha=arbol.xpath('//evento[tv="%s"]/fecha/text()'%tv_)
 	return zip(fecha,local,visi)
 
 while True:
@@ -93,17 +93,21 @@ while True:
 		jorna=jornada()
 		arbol = etree.parse('jornada%i.xml' % jorna)
 		glocal,gvisitante = goles(arbol)
-		print(type(glocal[0]))
+		local = list(glocal)
+		local = map(int,local)
+		visitante = list(gvisitante)
+		visitante = map(int,visitante)
+		print("En la jornada",jorna,"se han marcado un total de",sum(local)+sum(visitante),"goles")
+		print()
 
 	elif opcion == 3:
+		jorna=jornada()
 		tv_=pedir_canal()
-		print(tv_)
+		arbol = etree.parse('jornada%i.xml' % jorna)
 		for fecha,local,visi in canal(arbol):
 		    print ("Fecha y hora:",fecha)
 		    print("Local: %s -- Visitante: %s" % (local,visi))
-		    print("Canal/es de TV: %s" % tv)
 		    print("="*40)
-		    print("Hola")
 		print()
 
 	else:
