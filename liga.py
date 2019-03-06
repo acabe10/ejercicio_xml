@@ -1,5 +1,4 @@
 from lxml import etree
-arbol = etree.parse('https://raw.githubusercontent.com/acabe10/ejercicio_xml/master/liga.xml')
 
 # Función para pedir número de jornada
 def jornada():
@@ -8,8 +7,6 @@ def jornada():
 		print("Número incorrecto de jornada.")
 		jornada=int(input("Dígame la jornada(1-38): "))
 		return jornada
-	# Abrir documento dependiendo de jornada y año
-
 
 # Funcion para mostrar partidos, hora y canal de tv
 def partidos(arbol):
@@ -83,7 +80,8 @@ while True:
 		break;
 
 	elif opcion == 1:
-		tempo=temporada()
+		jorna=jornada()
+		arbol = etree.parse('https://www.marca.com/marcador/futbol/iphone/1/2017_18/fase0/jornada_%s/marcador.xml' % jorna)
 		for fecha,local,visi,tv in partidos(arbol):
 		    print ("Fecha y hora:",fecha)
 		    print("Local: %s -- Visitante: %s" % (local,visi))
