@@ -57,7 +57,7 @@ def pedir_canal():
 			print("Error de opción")
 			print()
 
-def canal(arbol):
+def canal(arbol,tv_):
 	local=arbol.xpath('//evento[tv="%s"]/equipolocal/text()'%tv_)
 	visi=arbol.xpath('//evento[tv="%s"]/equipovisitante/text()'%tv_)
 	fecha=arbol.xpath('//evento[tv="%s"]/fecha/text()'%tv_)
@@ -155,6 +155,11 @@ def pedir_equipo():
 			print("Error de opción")
 			print()
 
+def maximo_goles(arbol,equipo):
+	glocal=arbol.xpath('//evento[equipolocal="%s"]/resultadolocal/text()'%equipo)
+	gvisitante=arbol.xpath('//evento[equipovisitante="%s"]/resultadovisitante/text()'%equipo)
+	return glocal,gvisitante
+
 while True:
 	print("1.Pedir jornada y año y mostrar partidos, hora y canal de TV")
 	print("2.Te cuenta el número de goles que se han marcado en una determinada jornada")
@@ -196,7 +201,7 @@ while True:
 		jorna=jornada()
 		tv_=pedir_canal()
 		arbol = etree.parse('jornada%i.xml' % jorna)
-		for fecha,local,visi in canal(arbol):
+		for fecha,local,visi in canal(arbol,tv_):
 		    print ("Fecha y hora:",fecha)
 		    print("Local: %s -- Visitante: %s" % (local,visi))
 		    print("="*40)
@@ -204,6 +209,17 @@ while True:
 
 	elif opcion == 4:
 		equipo=pedir_equipo()
+		print(equipo)
+		jornadas = 38
+		max_jornada = 0
+		for i in range(1,jornadas+1):
+			arbol = etree.parse('jornada%i.xml' % i)
+			glocal,gvisitante = maximo_goles(arbol,equipo)
+			if len(glocal)>0:
+				print(glocal)
+			else:
+				print(gvisitante)
+
 
 	else:
 		print()
