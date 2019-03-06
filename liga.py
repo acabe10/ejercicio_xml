@@ -1,44 +1,13 @@
 from lxml import etree
 arbol = etree.parse('https://raw.githubusercontent.com/acabe10/ejercicio_xml/master/liga.xml')
-# Pedir número de jornada y año
-def temporada():
-	while True:
-		print("1.Temporada 2012-13")
-		print("2.Temporada 2013-14")
-		print("3.Temporada 2014-15")
-		print("4.Temporada 2015-16")
-		print("5.Temporada 2016-17")
-		print("6.Temporada 2017-18")
-		print("7.Temporada 2018-19")
-		opcion=int(input("Elige opción: "))
 
-		if opcion == 1:
-			temporada="2012_13"
-			return temporada
-		elif opcion == 2:
-			temporada="2013_14"
-			return temporada
-		elif opcion == 3:
-			temporada="2014_15"
-			return temporada
-		elif opcion == 4:
-			temporada="2015_16"
-			return temporada
-		elif opcion == 5:
-			temporada="2016_17"
-			return temporada
-		elif opcion == 6:
-			temporada="2017_18"
-			return temporada
-		elif opcion == 7:
-			temporada="2018_19"
-			return temporada
-		else:
-			print()
-			print("Error de opción")
-			print()
-
-
+# Función para pedir número de jornada
+def jornada():
+	jornada=int(input("Dígame la jornada(1-38): "))
+	while jornada > 38 or jornada < 1:
+		print("Número incorrecto de jornada.")
+		jornada=int(input("Dígame la jornada(1-38): "))
+		return jornada
 	# Abrir documento dependiendo de jornada y año
 
 
