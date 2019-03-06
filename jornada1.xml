@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<marcador>
+<competicion id="1"><nombre>LFP 1 DIVISION</nombre>
+<fase id="0"> </fase>
+<jornada id="1" jornadaSiguiente="https://www.marca.com/marcador/futbol/iphone/1/2017_18/fase0/jornada_2/marcador.xml"></jornada>
+<temporada>2017_18</temporada>
+<grupos>
+<grupo id="1">
+<eventos>
+<evento id="508364">
+<fecha>18/08/2017 20:15</fecha>
+<estado id="3">Finalizado</estado>
+<equipolocal id="111">Leganés</equipolocal>
+<equipovisitante id="92">Alavés</equipovisitante>
+<resultadolocal>1</resultadolocal>
+<resultadovisitante>0</resultadovisitante>
+<tipodeporte>1</tipodeporte>
+<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/957.png</escudoLocal>
+<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/173.png</escudoVisitante>
+<tv>beIN</tv>
+<estadisticas>https://www.marca.com/eventos/opta/futbol/2017/23/1/942808-estadisticasEquiposXml.xml</estadisticas>
+<alineaciones>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/leg_ala/alineaciones.html</alineaciones>
+<comentariosLectores></comentariosLectores>
+<previacronica>2</previacronica><enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/leg_ala/directo.xml</enlaceDirecto></evento>
+<evento id="508360">
+<fecha>18/08/2017 22:15</fecha>
+<estado id="3">Finalizado</estado>
+<equipolocal id="21">Valencia</equipolocal>
+<equipovisitante id="110">Las Palmas</equipovisitante>
+<resultadolocal>1</resultadolocal>
+<resultadovisitante>0</resultadovisitante>
+<tipodeporte>1</tipodeporte>
+<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/191.png</escudoLocal>
+<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/407.png</escudoVisitante>
+<tv>beIN</tv>
+<estadisticas>https://www.marca.com/eventos/opta/futbol/2017/23/1/942807-estadisticasEquiposXml.xml</estadisticas>
+<alineaciones>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/val_pal/alineaciones.html</alineaciones>
+<comentariosLectores></comentariosLectores>
+<previacronica>2</previacronica><enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/val_pal/directo.xml</enlaceDirecto></evento>
+<evento id="508361">
+<fecha>19/08/2017 18:15</fecha>
+<estado id="3">Finalizado</estado>
+<equipolocal id="6">Celta</equipolocal>
+<equipovisitante id="15">R. Sociedad</equipovisitante>
+<resultadolocal>2</resultadolocal>
+<resultadovisitante>3</resultadovisitante>
+<tipodeporte>1</tipodeporte>
+<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/176.png</escudoLocal>
+<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/188.png</escudoVisitante>
+<tv>beIN</tv>
+<estadisticas>https://www.marca.com/eventos/opta/futbol/2017/23/1/942800-estadisticasEquiposXml.xml</estadisticas>
+<alineaciones>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/cel_rso/alineaciones.html</alineaciones>
+<comentariosLectores></comentariosLectores>
+<previacronica>2</previacronica><enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/cel_rso/directo.xml</enlaceDirecto></evento>
+<evento id="508366">
+<fecha>19/08/2017 20:15</fecha>
+<estado id="3">Finalizado</estado>
+<equipolocal id="302">Girona</equipolocal>
+<equipovisitante id="3">Atlético</equipovisitante>
+<resultadolocal>2</resultadolocal>
+<resultadovisitante>2</resultadovisitante>
+<tipodeporte>1</tipodeporte>
+<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/2893.png</escudoLocal>
+<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/175.png</escudoVisitante>
+<tv>beIN</tv>
+<estadisticas>https://www.marca.com/eventos/opta/futbol/2017/23/1/942802-estadisticasEquiposXml.xml</estadisticas>
+<alineaciones>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/ger_atm/alineaciones.html</alineaciones>
+<comentariosLectores></comentariosLectores>
+<previacronica>2</previacronica><enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/ger_atm/directo.xml</enlaceDirecto></evento>
+<evento id="508358">
+<fecha>19/08/2017 22:15</fecha>
+<estado id="3">Finalizado</estado>
+<equipolocal id="17">Sevilla</equipolocal>
+<equipovisitante id="9">Espanyol</equipovisitante>
+<resultadolocal>1</resultadolocal>
+<resultadovisitante>1</resultadovisitante>
+<tipodeporte>1</tipodeporte>
+<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/179.png</escudoLocal>
+<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/177.png</escudoVisitante>
+<tv>beIN</tv>
+<estadisticas>https://www.marca.com/eventos/opta/futbol/2017/23/1/942803-estadisticasEquiposXml.xml</estadisticas>
+<alineaciones>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/sev_esp/alineaciones.html</alineaciones>
+<comentariosLectores></comentariosLectores>
+<previacronica>2</previacronica><enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/sev_esp/directo.xml</enlaceDirecto></evento>
+<evento id="508367">
+<fecha>20/08/2017 18:15</fecha>
+<estado id="3">Finalizado</estado>
+<equipolocal id="2">Athletic</equipolocal>
+<equipovisitante id="109">Getafe</equipovisitante>
+<resultadolocal>0</resultadolocal>
+<resultadovisitante>0</resultadovisitante>
+<tipodeporte>1</tipodeporte>
+<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/174.png</escudoLocal>
+<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/1450.png</escudoVisitante>
+<tv>beIN</tv>
+<estadisticas>https://www.marca.com/eventos/opta/futbol/2017/23/1/942801-estadisticasEquiposXml.xml</estadisticas>
+<alineaciones>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/ath_get/alineaciones.html</alineaciones>
+<comentariosLectores></comentariosLectores>
+<previacronica>2</previacronica><enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/ath_get/directo.xml</enlaceDirecto></evento>
+<evento id="508362">
+<fecha>20/08/2017 20:15</fecha>
+<estado id="3">Finalizado</estado>
+<equipolocal id="4">Barcelona</equipolocal>
+<equipovisitante id="5">Betis</equipovisitante>
+<resultadolocal>2</resultadolocal>
+<resultadovisitante>0</resultadovisitante>
+<tipodeporte>1</tipodeporte>
+<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/178.png</escudoLocal>
+<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/185.png</escudoVisitante>
+<tv>beIN</tv>
+<estadisticas>https://www.marca.com/eventos/opta/futbol/2017/23/1/942805-estadisticasEquiposXml.xml</estadisticas>
+<alineaciones>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/bar_bet/alineaciones.html</alineaciones>
+<comentariosLectores></comentariosLectores>
+<previacronica>2</previacronica><enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/bar_bet/directo.xml</enlaceDirecto></evento>
+<evento id="508363">
+<fecha>20/08/2017 22:15</fecha>
+<estado id="3">Finalizado</estado>
+<equipolocal id="8">Deportivo</equipolocal>
+<equipovisitante id="14">R. Madrid</equipovisitante>
+<resultadolocal>0</resultadolocal>
+<resultadovisitante>3</resultadovisitante>
+<tipodeporte>1</tipodeporte>
+<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/180.png</escudoLocal>
+<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/186.png</escudoVisitante>
+<tv>Partidazo</tv>
+<estadisticas>https://www.marca.com/eventos/opta/futbol/2017/23/1/942806-estadisticasEquiposXml.xml</estadisticas>
+<alineaciones>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/dep_rma/alineaciones.html</alineaciones>
+<comentariosLectores></comentariosLectores>
+<previacronica>2</previacronica><enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/dep_rma/directo.xml</enlaceDirecto></evento>
+<evento id="508365">
+<fecha>21/08/2017 20:15</fecha>
+<estado id="3">Finalizado</estado>
+<equipolocal id="112">Levante</equipolocal>
+<equipovisitante id="132">Villarreal</equipovisitante>
+<resultadolocal>1</resultadolocal>
+<resultadovisitante>0</resultadovisitante>
+<tipodeporte>1</tipodeporte>
+<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/855.png</escudoLocal>
+<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/449.png</escudoVisitante>
+<tv>beIN</tv>
+<estadisticas>https://www.marca.com/eventos/opta/futbol/2017/23/1/942799-estadisticasEquiposXml.xml</estadisticas>
+<alineaciones>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/lev_vil/alineaciones.html</alineaciones>
+<comentariosLectores></comentariosLectores>
+<previacronica>2</previacronica><enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/lev_vil/directo.xml</enlaceDirecto></evento>
+<evento id="508359">
+<fecha>21/08/2017 22:00</fecha>
+<estado id="3">Finalizado</estado>
+<equipolocal id="204">Málaga</equipolocal>
+<equipovisitante id="106">Eibar</equipovisitante>
+<resultadolocal>0</resultadolocal>
+<resultadovisitante>1</resultadovisitante>
+<tipodeporte>1</tipodeporte>
+<escudoLocal>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/182.png</escudoLocal>
+<escudoVisitante>https://e00-marca.uecdn.es/assets/datos-deportivos/escudos/opta/png/ios/28px/2x/953.png</escudoVisitante>
+<tv>GOL</tv>
+<estadisticas>https://www.marca.com/eventos/opta/futbol/2017/23/1/942804-estadisticasEquiposXml.xml</estadisticas>
+<alineaciones>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/mga_eib/alineaciones.html</alineaciones>
+<comentariosLectores></comentariosLectores>
+<previacronica>2</previacronica><enlaceDirecto>https://www.marca.com/eventos/marcador/futbol/2017_18/la-liga/jornada_1/mga_eib/directo.xml</enlaceDirecto></evento>
+</eventos>
+<clasificacion>
+<team>
+<name>R. Madrid</name> 
+<rank>1</rank> 
+<points>3</points> 
+<played>1</played> 
+<won>1</won> 
+<lost>0</lost> 
+<drawn>0</drawn> 
+<goals_scored>3</goals_scored> 
+<goals_conceded>0</goals_conceded> 
+</team>
+<team>
+<name>Barcelona</name> 
+<rank>2</rank> 
+<points>3</points> 
+<played>1</played> 
+<won>1</won> 
+<lost>0</lost> 
+<drawn>0</drawn> 
+<goals_scored>2</goals_scored> 
+<goals_conceded>0</goals_conceded> 
+</team>
+<team>
+<name>R. Sociedad</name> 
+<rank>3</rank> 
+<points>3</points> 
+<played>1</played> 
+<won>1</won> 
+<lost>0</lost> 
+<drawn>0</drawn> 
+<goals_scored>3</goals_scored> 
+<goals_conceded>2</goals_conceded> 
+</team>
+<team>
+<name>Eibar</name> 
+<rank>4</rank> 
+<points>3</points> 
+<played>1</played> 
+<won>1</won> 
+<lost>0</lost> 
+<drawn>0</drawn> 
+<goals_scored>1</goals_scored> 
+<goals_conceded>0</goals_conceded> 
+</team>
+<team>
+<name>Leganés</name> 
+<rank>5</rank> 
+<points>3</points> 
+<played>1</played> 
+<won>1</won> 
+<lost>0</lost> 
+<drawn>0</drawn> 
+<goals_scored>1</goals_scored> 
+<goals_conceded>0</goals_conceded> 
+</team>
+<team>
+<name>Levante</name> 
+<rank>6</rank> 
+<points>3</points> 
+<played>1</played> 
+<won>1</won> 
+<lost>0</lost> 
+<drawn>0</drawn> 
+<goals_scored>1</goals_scored> 
+<goals_conceded>0</goals_conceded> 
+</team>
+<team>
+<name>Valencia</name> 
+<rank>7</rank> 
+<points>3</points> 
+<played>1</played> 
+<won>1</won> 
+<lost>0</lost> 
+<drawn>0</drawn> 
+<goals_scored>1</goals_scored> 
+<goals_conceded>0</goals_conceded> 
+</team>
+<team>
+<name>Atlético</name> 
+<rank>8</rank> 
+<points>1</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>0</lost> 
+<drawn>1</drawn> 
+<goals_scored>2</goals_scored> 
+<goals_conceded>2</goals_conceded> 
+</team>
+<team>
+<name>Girona</name> 
+<rank>9</rank> 
+<points>1</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>0</lost> 
+<drawn>1</drawn> 
+<goals_scored>2</goals_scored> 
+<goals_conceded>2</goals_conceded> 
+</team>
+<team>
+<name>Espanyol</name> 
+<rank>10</rank> 
+<points>1</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>0</lost> 
+<drawn>1</drawn> 
+<goals_scored>1</goals_scored> 
+<goals_conceded>1</goals_conceded> 
+</team>
+<team>
+<name>Sevilla</name> 
+<rank>11</rank> 
+<points>1</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>0</lost> 
+<drawn>1</drawn> 
+<goals_scored>1</goals_scored> 
+<goals_conceded>1</goals_conceded> 
+</team>
+<team>
+<name>Athletic</name> 
+<rank>12</rank> 
+<points>1</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>0</lost> 
+<drawn>1</drawn> 
+<goals_scored>0</goals_scored> 
+<goals_conceded>0</goals_conceded> 
+</team>
+<team>
+<name>Getafe</name> 
+<rank>13</rank> 
+<points>1</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>0</lost> 
+<drawn>1</drawn> 
+<goals_scored>0</goals_scored> 
+<goals_conceded>0</goals_conceded> 
+</team>
+<team>
+<name>Celta</name> 
+<rank>14</rank> 
+<points>0</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>1</lost> 
+<drawn>0</drawn> 
+<goals_scored>2</goals_scored> 
+<goals_conceded>3</goals_conceded> 
+</team>
+<team>
+<name>Alavés</name> 
+<rank>15</rank> 
+<points>0</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>1</lost> 
+<drawn>0</drawn> 
+<goals_scored>0</goals_scored> 
+<goals_conceded>1</goals_conceded> 
+</team>
+<team>
+<name>Las Palmas</name> 
+<rank>16</rank> 
+<points>0</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>1</lost> 
+<drawn>0</drawn> 
+<goals_scored>0</goals_scored> 
+<goals_conceded>1</goals_conceded> 
+</team>
+<team>
+<name>Málaga</name> 
+<rank>17</rank> 
+<points>0</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>1</lost> 
+<drawn>0</drawn> 
+<goals_scored>0</goals_scored> 
+<goals_conceded>1</goals_conceded> 
+</team>
+<team>
+<name>Villarreal</name> 
+<rank>18</rank> 
+<points>0</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>1</lost> 
+<drawn>0</drawn> 
+<goals_scored>0</goals_scored> 
+<goals_conceded>1</goals_conceded> 
+</team>
+<team>
+<name>Betis</name> 
+<rank>19</rank> 
+<points>0</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>1</lost> 
+<drawn>0</drawn> 
+<goals_scored>0</goals_scored> 
+<goals_conceded>2</goals_conceded> 
+</team>
+<team>
+<name>Deportivo</name> 
+<rank>20</rank> 
+<points>0</points> 
+<played>1</played> 
+<won>0</won> 
+<lost>1</lost> 
+<drawn>0</drawn> 
+<goals_scored>0</goals_scored> 
+<goals_conceded>3</goals_conceded> 
+</team>
+</clasificacion>
+</grupo>
+</grupos>
+</competicion>
+</marcador>

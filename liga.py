@@ -1,5 +1,5 @@
 from lxml import etree
-arbol = etree.parse('liga.xml')
+arbol = etree.parse('https://raw.githubusercontent.com/acabe10/ejercicio_xml/master/liga.xml')
 # Pedir número de jornada y año
 def temporada():
 	while True:
@@ -55,6 +55,48 @@ def goles(arbol):
 	gvisitante=arbol.xpath("//evento/resultadovisitante/text()")
 	return glocal,gvisitante
 
+def pedir_canal():
+	while True:
+		print("Dime el canal por el que quiere preguntar:")
+		print("1.beIN")
+		print("2.GOL")
+		print("3.GolT")
+		print("4.C+L")
+		print("5.C+ Liga")
+		print("6.Teledeporte")
+		print()
+		canal=int(input("Elige opción: "))
+		print()
+
+		if opcion == 1:
+			canal="beIN"
+			return canal
+		elif opcion == 2:
+			canal="GOL"
+			return canal
+		elif opcion == 3:
+			canal="GolT"
+			return canal
+		elif opcion == 4:
+			canal="C+L"
+			return canal
+		elif opcion == 5:
+			canal="C+ Liga"
+			return canal
+		elif opcion == 6:
+			canal="Teledeporte"
+			return canal
+		else:
+			print()
+			print("Error de opción")
+			print()
+
+def canal(arbol):
+	local=arbol.xpath('//evento[tv="%s"]/../equipolocal/text()'%tv_)
+	visi=arbol.xpath('//evento[tv="%s"]/../equipovisitante/text()'%tv_)
+	fecha=arbol.xpath('//evento[tv="%s"]/../fecha/text()'%tv_)
+	return zip(fecha,local,visi)
+
 while True:
 	print("1.Pedir jornada y año y mostrar partidos, hora y canal de TV")
 	print("2.Te cuenta el número de goles que se han marcado en una determinada jornada")
@@ -85,15 +127,15 @@ while True:
 		print(sum(glocal))
 
 	elif opcion == 3:
-		while True:
-			print("1.beIN")
-			print("2.GOL")
-			print("3.GolT")
-			print("4.C+L")
-			print("5.C+ Liga")
-			print("6.Teledeporte")
-			canal=int(input("Elige opción: "))
-			print()
+		tv_=pedir_canal()
+		print(tv_)
+		for fecha,local,visi in canal(arbol):
+		    print ("Fecha y hora:",fecha)
+		    print("Local: %s -- Visitante: %s" % (local,visi))
+		    print("Canal/es de TV: %s" % tv)
+		    print("="*40)
+		    print("Hola")
+		print()
 
 	else:
 		print()
