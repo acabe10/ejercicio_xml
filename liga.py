@@ -4,9 +4,9 @@ from lxml import etree
 def jornada():
 	jornada=int(input("Dígame la jornada(1-38): "))
 	while jornada > 38 or jornada < 1:
-		print("Número incorrecto de jornada.")
+		print("ERROR: Número de jornada incorrecta")
 		jornada=int(input("Dígame la jornada(1-38): "))
-		return jornada
+	return jornada
 
 # Funcion para mostrar partidos, hora y canal de tv
 def partidos(arbol):
@@ -81,7 +81,7 @@ while True:
 
 	elif opcion == 1:
 		jorna=jornada()
-		arbol = etree.parse('https://www.marca.com/marcador/futbol/iphone/1/2017_18/fase0/jornada_%s/marcador.xml' % jorna)
+		arbol = etree.parse('jornada%i.xml' % jorna)
 		for fecha,local,visi,tv in partidos(arbol):
 		    print ("Fecha y hora:",fecha)
 		    print("Local: %s -- Visitante: %s" % (local,visi))
@@ -90,8 +90,10 @@ while True:
 		print()
 
 	elif opcion == 2:
+		jorna=jornada()
+		arbol = etree.parse('jornada%i.xml' % jorna)
 		glocal,gvisitante = goles(arbol)
-		print(sum(glocal))
+		print(type(glocal[0]))
 
 	elif opcion == 3:
 		tv_=pedir_canal()
