@@ -2,7 +2,7 @@
 <marcador>
 <competicion id="1"><nombre>LFP 1 DIVISION</nombre>
 <fase id="0"> </fase>
-<jornada id="37"  jornadaAnterior="https://www.marca.com/marcador/futbol/iphone/1/2017_18/fase0/jornada_36/marcador.xml" jornadaSiguiente="https://www.marca.com/marcador/futbol/iphone/1/2017_18/fase0/jornada_38/marcador.xml"></jornada>
+<jornada id="37" jornadaAnterior="https://www.marca.com/marcador/futbol/iphone/1/2017_18/fase0/jornada_36/marcador.xml" jornadaSiguiente="https://www.marca.com/marcador/futbol/iphone/1/2017_18/fase0/jornada_38/marcador.xml"></jornada>
 <temporada>2017_18</temporada>
 <grupos>
 <grupo id="1">
