@@ -162,20 +162,15 @@ def maximo_goles(arbol,equipo):
 	gvisitante=arbol.xpath('//evento[equipovisitante="%s"]/resultadovisitante/text()'%equipo)
 	return glocal,gvisitante
 
-def quiniela(arbol,resul):
-	glocal=arbol.xpath("//evento/resultadolocal/text()")
-	gvisitante=arbol.xpath("//evento/resultadovisitante/text()")
-	if resul == "1":
-		if glocal[0] > gvisitante[0]:
-			return "Acertaste!"
-		else:
-			return "Fallaste!"
-	elif resul == "2" and glocal < gvisitante:
-		return "Acertaste!"
-	elif resul == "x" and glocal == gvisitante:
-		return "Acertaste!"
-	else:
-		return "Fallaste!"
+def quiniela(arbol,resul,local,visi):
+	glocal=arbol.xpath('//evento[equipolocal="%s"]/resultadolocal/text()'%local)
+	gvisitante=arbol.xpath('//evento[equipovisitante="%s"]/resultadovisitante/text()'%visi)
+	return glocal,gvisitante
+#	if resul == "1":
+#		if glocal[0] > gvisitante[0]:
+#			return "Acertaste!"
+#		else:
+#			return "Fallo!"
 
 while True:
 	print()
@@ -185,6 +180,7 @@ while True:
 	print("4.Pedir equipo y decir en que partido de la temporada ha metido más goles")
 	print("5.Quiniela de jornada seleccionada")
 	print("0.Salir")
+	print()
 	opcion=int(input("Elige opción: "))
 	print()
 
@@ -228,7 +224,6 @@ while True:
 
 	elif opcion == 4:
 		equipo=pedir_equipo()
-		print(equipo)
 		jornadas = 38
 		max_jornada = 0
 		for i in range(1,jornadas+1):
@@ -248,14 +243,27 @@ while True:
 	elif opcion == 5:
 		jorna=jornada()
 		arbol = etree.parse('jornada%i.xml' % jorna)
+		aciertos=0
+		fallos=0
 		for fecha,local,visi,tv in partidos(arbol):
 		    print("="*40)
 		    print("%s -- %s" % (local,visi))
 		    resul=input("Dígame la opción(1-X-2):")
 		    while resul != "2" and resul != "1" and resul != "x":
 		    	resul=input("Dígame la opción(1-x-2):")
-		    acierto=quiniela(arbol,resul)
-		    print(acierto)
+		    glocal,gvisi=quiniela(arbol,resul,local,visi)
+		    if resul == "1" and glocal[0] > gvisi[0]:
+		    	aciertos=aciertos+1
+		    elif resul == "x" and glocal[0] == gvisi[0]:
+		    	aciertos=aciertos+1
+		    elif resul == "2" and glocal[0] < gvisi[0]:
+		    	aciertos=aciertos+1
+		    else:
+		    	fallos=fallos+1
+		print()
+		print("El total de aciertos ha sido de:",aciertos)
+		print("El total de fallos ha sido de:",fallos)
+		    
 	else:
 		print()
 		print("Error de opción")
