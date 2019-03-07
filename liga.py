@@ -218,14 +218,9 @@ while True:
 			arbol = etree.parse('jornada%i.xml' % i)
 			glocal,gvisitante = maximo_goles(arbol,equipo)
 			if len(glocal)>0:
-				local = list(glocal)
-				local = map(int,local)
-				print(glocal[0])
-				print(type(glocal[0]))
+				print("En la jornada",i,"el",equipo,"marcó",glocal[0],"goles")
 			else:
-				print(gvisitante)
-				print(type(gvisitante[0]))
-
+				print("En la jornada",i,"el",equipo,"marcó",gvisitante[0],"goles")
 
 	else:
 		print()
