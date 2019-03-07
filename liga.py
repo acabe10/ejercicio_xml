@@ -204,7 +204,7 @@ while True:
 		tv_=pedir_canal()
 		arbol = etree.parse('jornada%i.xml' % jorna)
 		for fecha,local,visi in canal(arbol,tv_):
-		    print ("Fecha y hora:",fecha)
+		    print("Fecha y hora:",fecha)
 		    print("Local: %s -- Visitante: %s" % (local,visi))
 		    print("="*40)
 		print()
@@ -218,9 +218,15 @@ while True:
 			arbol = etree.parse('jornada%i.xml' % i)
 			glocal,gvisitante = maximo_goles(arbol,equipo)
 			if len(glocal)>0:
-				print("En la jornada",i,"el",equipo,"marcó",glocal[0],"goles")
+				if glocal[0] == "0":
+					print("En la jornada",i,"el",equipo,"no marcó goles")
+				else:
+					print("En la jornada",i,"el",equipo,"marcó",glocal[0],"goles")
 			else:
-				print("En la jornada",i,"el",equipo,"marcó",gvisitante[0],"goles")
+				if gvisitante[0] == "0":
+					print("En la jornada",i,"el",equipo,"no marcó goles")
+				else:
+					print("En la jornada",i,"el",equipo,"marcó",gvisitante[0],"goles")
 
 	else:
 		print()
