@@ -162,6 +162,21 @@ def maximo_goles(arbol,equipo):
 	gvisitante=arbol.xpath('//evento[equipovisitante="%s"]/resultadovisitante/text()'%equipo)
 	return glocal,gvisitante
 
+def quiniela(arbol,resul):
+	glocal=arbol.xpath("//evento/resultadolocal/text()")
+	gvisitante=arbol.xpath("//evento/resultadovisitante/text()")
+	if resul == "1":
+		if glocal[0] > gvisitante[0]:
+			return "Acertaste!"
+		else:
+			return "Fallaste!"
+	elif resul == "2" and glocal < gvisitante:
+		return "Acertaste!"
+	elif resul == "x" and glocal == gvisitante:
+		return "Acertaste!"
+	else:
+		return "Fallaste!"
+
 while True:
 	print()
 	print("1.Pedir jornada y mostrar partidos, hora y canal de TV")
@@ -234,12 +249,13 @@ while True:
 		jorna=jornada()
 		arbol = etree.parse('jornada%i.xml' % jorna)
 		for fecha,local,visi,tv in partidos(arbol):
-		    print("Local: %s -- Visitante: %s" % (local,visi))
 		    print("="*40)
+		    print("%s -- %s" % (local,visi))
 		    resul=input("Dígame la opción(1-X-2):")
 		    while resul != "2" and resul != "1" and resul != "x":
-		    	print(resul)
 		    	resul=input("Dígame la opción(1-x-2):")
+		    acierto=quiniela(arbol,resul)
+		    print(acierto)
 	else:
 		print()
 		print("Error de opción")
