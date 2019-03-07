@@ -8,7 +8,7 @@ def jornada():
 		jornada=int(input("Dígame la jornada(1-38): "))
 	return jornada
 
-# Funcion para mostrar partidos, hora y canal de tv
+# Funcion para mostrar partidos, hora y canal de tv.
 def partidos(arbol):
 	fecha=arbol.xpath("//evento/fecha/text()")
 	local=arbol.xpath("//evento/equipolocal/text()")
@@ -161,10 +161,11 @@ def maximo_goles(arbol,equipo):
 	return glocal,gvisitante
 
 while True:
-	print("1.Pedir jornada y año y mostrar partidos, hora y canal de TV")
+	print()
+	print("1.Pedir jornada y mostrar partidos, hora y canal de TV")
 	print("2.Te cuenta el número de goles que se han marcado en una determinada jornada")
-	print("3.Pedir una jornada y canal de TV,y te dice qué partidos y a qué hora se emitirán en ese canal")
-	print("4.Pedir árbitro y temporada y decir cuantos partidos ha arbitrado")
+	print("3.Pedir una jornada y canal de TV, y te dice qué partidos y a qué hora se emitirán en ese canal")
+	print("4.Pedir equipo y decir en que partido de la temporada ha metido más goles")
 	print("5.Quiniela de jornada seleccionada")
 	print("0.Salir")
 	opcion=int(input("Elige opción: "))
@@ -194,6 +195,7 @@ while True:
 		local = map(int,local)
 		visitante = list(gvisitante)
 		visitante = map(int,visitante)
+		print()
 		print("En la jornada",jorna,"se han marcado un total de",sum(local)+sum(visitante),"goles")
 		print()
 
@@ -216,9 +218,13 @@ while True:
 			arbol = etree.parse('jornada%i.xml' % i)
 			glocal,gvisitante = maximo_goles(arbol,equipo)
 			if len(glocal)>0:
-				print(glocal)
+				local = list(glocal)
+				local = map(int,local)
+				print(glocal[0])
+				print(type(glocal[0]))
 			else:
 				print(gvisitante)
+				print(type(gvisitante[0]))
 
 
 	else:
