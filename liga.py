@@ -10,7 +10,7 @@ def jornada():
 		print()
 	return jornada
 
-# Funcion para mostrar partidos, hora y canal de tv.
+# Función para mostrar partidos, hora y canal de tv.
 def partidos(arbol):
 	fecha=arbol.xpath("//evento/fecha/text()")
 	local=arbol.xpath("//evento/equipolocal/text()")
@@ -18,11 +18,13 @@ def partidos(arbol):
 	canal=arbol.xpath("//evento/tv/text()")
 	return zip(fecha,local,visitante,canal)
 
+# Función para ver resultado local y resultado visitante
 def goles(arbol):
 	glocal=arbol.xpath("//evento/resultadolocal/text()")
 	gvisitante=arbol.xpath("//evento/resultadovisitante/text()")
 	return glocal,gvisitante
 
+# Función para pedir canal de tv
 def pedir_canal():
 	while True:
 		print("Dime el canal por el que quiere preguntar:")
@@ -59,12 +61,14 @@ def pedir_canal():
 			print("Error de opción")
 			print()
 
+# Función para devolver según la tv el equipo y la fecha
 def canal(arbol,tv_):
 	local=arbol.xpath('//evento[tv="%s"]/equipolocal/text()'%tv_)
 	visi=arbol.xpath('//evento[tv="%s"]/equipovisitante/text()'%tv_)
 	fecha=arbol.xpath('//evento[tv="%s"]/fecha/text()'%tv_)
 	return zip(fecha,local,visi)
 
+# Función para pedir equipo
 def pedir_equipo():
 	while True:
 		print("Dime el equipo:")
@@ -157,21 +161,19 @@ def pedir_equipo():
 			print("Error de opción")
 			print()
 
+# Función para devolver resultado loca y resultado visitante según el equipo
 def maximo_goles(arbol,equipo):
 	glocal=arbol.xpath('//evento[equipolocal="%s"]/resultadolocal/text()'%equipo)
 	gvisitante=arbol.xpath('//evento[equipovisitante="%s"]/resultadovisitante/text()'%equipo)
 	return glocal,gvisitante
 
-def quiniela(arbol,resul,local,visi):
+# Función para devolver resultado de ambos equipos
+def quiniela(arbol,local,visi):
 	glocal=arbol.xpath('//evento[equipolocal="%s"]/resultadolocal/text()'%local)
 	gvisitante=arbol.xpath('//evento[equipovisitante="%s"]/resultadovisitante/text()'%visi)
 	return glocal,gvisitante
-#	if resul == "1":
-#		if glocal[0] > gvisitante[0]:
-#			return "Acertaste!"
-#		else:
-#			return "Fallo!"
 
+# Bucle para pedir una opción del programa
 while True:
 	print()
 	print("1.Pedir jornada y mostrar partidos, hora y canal de TV")
@@ -184,12 +186,14 @@ while True:
 	opcion=int(input("Elige opción: "))
 	print()
 
+# Opción para despedir el programa
 	if opcion == 0:
 		print()
 		print("Adiós!")
 		print()
 		break;
 
+# Opción 1: según la jornada, te muestra los partidos de esa jornada
 	elif opcion == 1:
 		jorna=jornada()
 		arbol = etree.parse('jornada%i.xml' % jorna)
@@ -200,6 +204,7 @@ while True:
 		    print("="*40)
 		print()
 
+# Opción 2: según la jornada, suma todos los goles de dicha jornada
 	elif opcion == 2:
 		jorna=jornada()
 		arbol = etree.parse('jornada%i.xml' % jorna)
@@ -212,6 +217,8 @@ while True:
 		print("En la jornada",jorna,"se han marcado un total de",sum(local)+sum(visitante),"goles")
 		print()
 
+# Opción 3: según la jornada y el canal, te muestra los partidos que se
+# emitirán en ese canal
 	elif opcion == 3:
 		jorna=jornada()
 		tv_=pedir_canal()
@@ -222,6 +229,8 @@ while True:
 		    print("="*40)
 		print()
 
+# Opción 4: según el equipo, recorre todas las jornadas mostrando los goles
+# en cada jornada
 	elif opcion == 4:
 		equipo=pedir_equipo()
 		jornadas = 38
@@ -240,6 +249,8 @@ while True:
 				else:
 					print("En la jornada",i,"el",equipo,"marcó",gvisitante[0],"goles")
 
+# Opción 5: según la jornada, va pidiendo ingresar una quiniela para después
+# compararlo con el resultado y así contar aciertos y fallos
 	elif opcion == 5:
 		jorna=jornada()
 		arbol = etree.parse('jornada%i.xml' % jorna)
@@ -251,7 +262,7 @@ while True:
 		    resul=input("Dígame la opción(1-X-2):")
 		    while resul != "2" and resul != "1" and resul != "x":
 		    	resul=input("Dígame la opción(1-x-2):")
-		    glocal,gvisi=quiniela(arbol,resul,local,visi)
+		    glocal,gvisi=quiniela(arbol,local,visi)
 		    if resul == "1" and glocal[0] > gvisi[0]:
 		    	aciertos=aciertos+1
 		    elif resul == "x" and glocal[0] == gvisi[0]:
@@ -263,25 +274,9 @@ while True:
 		print()
 		print("El total de aciertos ha sido de:",aciertos)
 		print("El total de fallos ha sido de:",fallos)
-		    
+
+# Opción de error de opción		    
 	else:
 		print()
 		print("Error de opción")
 		print()
-
-# Pedir número de jornada y año
-	# Abrir documento de esa jornada y año
-	# Contar goles de esa jornada
-
-# Pedir jornada, año y canal de TV
-	# Abrir documento de jornada y año
-	# Mostrar partidos de esa jornada en ese canal
-
-# Pedir temporada y arbitro
-	# Abrir documentos de temporada
-	# Mostrar partidos arbitrados por ese arbitro
-
-# Pedir una jornada
-	# Abrir documento de jornada
-	# Id mostrando partidos de esa jornada y al final mostrar si
-	# si se ha acertado con la quiniela	
